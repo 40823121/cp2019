@@ -1,6 +1,9 @@
 <h1>About</h1>
+<p><img alt="" height="562" src="/images/1517835221-YGTpeFsrkh.jpg" width="1000"/></p>
+<h1>作業</h1>
+<h2>Hello</h2>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=320220f2e2375d441fdd2bd430c0de10" width="600"></iframe></p>
-<h1>迴圈程式</h1>
+<h2>迴圈程式</h2>
 <p>gist;<a href="https://gist.github.com/40823121/9a81340c5459f8e9d10a5bcfbd407d53">https://gist.github.com/40823121/9a81340c5459f8e9d10a5bcfbd407d53</a></p>
 <p><a href="https://mde.tw/dartpad/?id=9a81340c5459f8e9d10a5bcfbd407d53">https://mde.tw/dartpad/?id=9a81340c5459f8e9d10a5bcfbd407d53</a></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">void main() {
@@ -8,15 +11,44 @@
     print("hello ${i +1}");
   }
 }</pre>
-<h1>RungeKutta</h1>
+<h2>RungeKutta</h2>
 <p><iframe height="600" src="https://dartpad.dev/embed-inline.html?id=17203e9d60cae547546334102d00e026" width="600"></iframe><img alt="" height="288" src="/images/bang1.png" width="478"/></p>
 <p><img alt="" height="330" src="/images/bang2.png" width="550"/><img alt="" height="304" src="/images/bang3.png" width="492"/></p>
 <p></p>
 <p>簡諧運動</p>
-<h1>圖片</h1>
+<h2>圖片</h2>
 <p><img alt="" height="281" src="/images/1517835221-YGTpeFsrkh.jpg" width="500"/></p>
 <p><img alt="" height="307" src="/images/1517835221-YGTpeFsrkh.jpg" width="546"/></p>
-<p></p>
-<p></p>
-<p><img alt="" height="250" src="/images/web03.png" width="500"/></p>
-<p></p>
+<h2>按鈕</h2>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823121&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823121&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823121&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<h4>純 Dart 程式</h4>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getDart('function')">Function</button> <button onclick="getDart('fun_parameter')">Function Parameter</button> <button onclick="getDart('fat_arrow')">Fat Arrow </button><button onclick="getDart('temp')">溫度轉換</button></p>
+<h4>Html 程式</h4>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
+<h4>Flutter 程式</h4>
+<p><button onclick="getFlutter('flutter0')">Flutter0</button> <button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button> <button onclick="getFlutter('flutter4')">Flutter4</button> <button onclick="getFlutter('flutter_counter')">Flutter Counter</button> <button onclick="getFlutter('flutter_roc')">ROC Flag</button> <button onclick="getFlutter('flutter_mine1')">踩地雷 1</button> <button onclick="getFlutter('flutter_mine2')">踩地雷 2</button> <button onclick="getFlutter('flutter_mine3')">踩地雷 3</button> <button onclick="getFlutter('flutter_mine4')">踩地雷 4</button></p>
