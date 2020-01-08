@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='作業.html'>作業</a><ul class='dropdown'><li><a href='Hello.html'>Hello</a><li><a href='迴圈程式.html'>迴圈程式</a><li><a href='RungeKutta.html'>RungeKutta</a><li><a href='圖片.html'>圖片</a><li><a href='按鈕.html'>按鈕</a><li><a href='影片.html'>影片</a><li><a href='國旗-1.html'>國旗-1</a></li></ul><li class='has-children'><a href='W17查驗考試.html'>W17查驗考試</a><ul class='dropdown'><li><a href='國旗-2.html'>國旗-2</a><li><a href='重量單位轉換.html'>重量單位轉換</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='作業.html'>作業</a><ul class='dropdown'><li><a href='Hello.html'>Hello</a><li><a href='迴圈程式.html'>迴圈程式</a><li><a href='RungeKutta.html'>RungeKutta</a><li><a href='圖片.html'>圖片</a><li><a href='按鈕.html'>按鈕</a><li><a href='影片.html'>影片</a><li><a href='國旗.html'>國旗</a></li></ul><li><a href='W17查驗考試.html'>W17查驗考試</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,8 +154,44 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">國旗-1 << <a href='國旗-1.html'>Previous</a> <a href='國旗-2.html'>Next</a> >> 國旗-2<br /><h1>W17查驗考試</h1>
-<br />國旗-1 << <a href='國旗-1.html'>Previous</a> <a href='國旗-2.html'>Next</a> >> 國旗-2</div>
+    <div id="tipue_search_content">國旗 << <a href='國旗.html'>Previous</a> <br /><h1>W17查驗考試</h1>
+<p>國旗</p>
+<p><canvas height="200" id="canvas" width="300"></canvas> <button id="clear">清除</button> <button id="ROC">中華民國國旗</button> <button id="jp">日本國旗</button> <button id="fr">法國國旗</button> <button id="LN">荷蘭國旗</button> <button id="BDR">德國國旗</button><button id="usa">俄羅斯國旗</button></p>
+<script src="/../cp2019/downloads/dart_ex/Flag/flag.js"></script>
+<p>重量單位轉換</p>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=40823121&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=40823121&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=40823121&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
+<p><button onclick="getDart('weight-dart')">重量轉換dart</button></p>
+<p><button onclick="getHtmlDart('weight')">重量轉換html</button></p>
+<p><!-- 內建放入的 Dart 原始碼 --></p>
+<p><button onclick="largest()">放大</button> <button onclick="original()">回復</button><br/><iframe height="600" id="iframe" src="https://dartpad.github.io/embed-dart.html?gh_owner=40823121&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/weight-dart&amp;theme=dark" width="800"></iframe></p>
+<p></p>
+<p>請輸入所要轉換的重量<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<script src="/../cp2019/downloads/dart_ex/weight/weight.js"></script><br />國旗 << <a href='國旗.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
